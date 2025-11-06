@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郑语佳</title>
+    <style>
+        *{
+            list-style: none;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+        .yijihezi{
+            width: 600px;
+            height: 200px;
+            margin: 50px auto;
+            position: relative;
+        }
+        .yijiliebiao>li{            
+            background-color: rgb(172, 231, 243);
+            width: 120px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 7px 0;
+            border-radius: 5px;
+            position: relative;
+        }
+        .erjihezi{
+            position: absolute;
+            left: 124px;
+            width: 400px;
+            height: 40px;
+            background-color: pink;
+            border-radius: 5px;
+            display: none;
+        }
+        .erjiliebiao{
+            display: flex;
+            padding: 0 10px;
+        }
+        .erjiliebiao>li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            margin: 0 5px;
+            width: 120px;
+        }
+        .yijiliebiao>li:hover>.erjihezi{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="yijihezi">
+        <ul class="yijiliebiao">
+            <li>
+                <a href="#">长毛猫</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">波斯猫</a></li>
+                        <li><a href="#">缅因猫</a></li>
+                        <li><a href="#">布偶猫</a></li>
+                    </ul>
+                </div> 
+            </li>
+            <li>
+                <a href="#">短毛猫</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">英国短毛</a></li>
+                        <li><a href="#">美国短毛</a></li>
+                        <li><a href="#">暹罗猫</a></li>
+                    </ul>
+                </div> 
+            </li>
+            <li>
+                <a href="#">卷毛猫</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">德文卷毛猫</a></li>
+                        <li><a href="#">康沃尔卷毛猫</a></li>
+                        <li><a href="#">赛凯卷毛猫</a></li>
+                    </ul>
+               </div> 
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
